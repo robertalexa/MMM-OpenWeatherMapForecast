@@ -276,10 +276,11 @@ Module.register("MMM-OpenWeatherMapForecast", {
         var summary;
         if (this.config.concise) {
             summary = this.weatherData.hourly ? this.weatherData.hourly[0].weather[0].description : this.weatherData.current.weather[0].description;
+            summary = this.capitaliseFirstLetter(summary) + ".";
         } else {
-            summary = (this.weatherData.current.weather[0].description + ".") + " " +
-                (this.weatherData.hourly ? this.weatherData.hourly[0].weather[0].description + " " : "") +
-                (this.weatherData.daily ? this.weatherData.daily[0].weather[0].description : "");
+            summary = this.capitaliseFirstLetter(this.weatherData.current.weather[0].description) + "." +
+                (this.weatherData.hourly ? " " + this.capitaliseFirstLetter(this.weatherData.hourly[0].weather[0].description) + "." : "") +
+                (this.weatherData.daily ? " " + this.capitaliseFirstLetter(this.weatherData.daily[0].weather[0].description) + "." : "");
         }
 
         var hourlies = [];
@@ -660,5 +661,13 @@ Module.register("MMM-OpenWeatherMapForecast", {
                 self.config[key] = parseInt(self.config[key]);
             }
         });
+    },
+    
+    /*
+      Capitalise first letter of a sentence. 
+      Used to properly format weather summary.
+    */
+    capitaliseFirstLetter: function(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
     }
 });
