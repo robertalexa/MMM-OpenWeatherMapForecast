@@ -533,6 +533,7 @@ Module.register("MMM-OpenWeatherMapForecast", {
         "4c": { path: "4c", format: "svg" },
         "5m": { path: "5m", format: "svg" },
         "5c": { path: "5c", format: "svg" },
+        "6c": { path: "6c", format: "svg" },
     },
 
     /*

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="45" height="45" viewbox="0 0 17 17" style="&#10;    /* background-color: black; */&#10;">
+<defs>
+	<filter id="blur" width="200%" height="200%">
+		<feComponentTransfer>
+			<feFuncA type="linear" slope="0.05"/>
+		</feComponentTransfer>
+		<feMerge> 
+			<feMergeNode/>
+			<feMergeNode in="SourceGraphic"/> 
+		</feMerge>
+	</filter>
+	<style type="text/css"><![CDATA[
+/* CLOUDS */
+@keyframes am-weather-cloud-2 {
+	0% {
+		-webkit-transform: translate(-2px,0px);
+		-moz-transform: translate(-2px,0px);
+		-ms-transform: translate(-2px,0px);
+		transform: translate(-2px,0px);
+	}
+	50% {
+		-webkit-transform: translate(1px,0px);
+		-moz-transform: translate(1px,0px);
+		-ms-transform: translate(1px,0px);
+		transform: translate(1px,0px);
+	}
+	100% {
+		-webkit-transform: translate(-2px,0px);
+		-moz-transform: translate(-2px,0px);
+		-ms-transform: translate(-2px,0px);
+		transform: translate(-2px,0px);
+	}
+
+}
+.am-weather-cloud-2 {
+	-webkit-animation-name: am-weather-cloud-2;
+	-moz-animation-name: am-weather-cloud-2;
+	animation-name: am-weather-cloud-2;
+	-webkit-animation-duration: 8s;
+	-moz-animation-duration: 8s;
+	animation-duration: 8s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+/* MOON */
+@keyframes am-weather-moon {
+	0% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(-25deg);
+		-moz-transform: rotate(-25deg);
+		-ms-transform: rotate(-25deg);
+		transform: rotate(-25deg);
+	}
+	50% {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+.am-weather-moon {
+	-webkit-animation-name: am-weather-moon;
+	-moz-animation-name: am-weather-moon;
+	-ms-animation-name: am-weather-moon;
+	animation-name: am-weather-moon;
+	-webkit-animation-duration: 18s;
+	-moz-animation-duration: 18s;
+	-ms-animation-duration: 18s;
+	animation-duration: 18s;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-moz-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	-ms-transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+	transform-origin: 12.5px 15.15px 0; /* TODO FF CENTER ISSUE */
+}
+
+/* EASING */
+.am-weather-easing-ease-in-out {
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-ms-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}]]></style>
+	</defs>
+	<g filter="url(#blur)" id="cloudy-day-3">
+		<g transform="translate(14,3)">
+			<g transform="translate(-10,0)">
+				<g class="am-weather-moon">
+					<path d="M14.5,13.2c0-3.7,2-6.9,5-8.7   c-1.5-0.9-3.2-1.3-5-1.3c-5.5,0-10,4.5-10,10s4.5,10,10,10c1.8,0,3.5-0.5,5-1.3C16.5,20.2,14.5,16.9,14.5,13.2z" fill="#F9E491" stroke="#F9E491" stroke-linejoin="round" stroke-width="2"/>
+				</g>
+			</g>
+			<g class="am-weather-cloud-2 am-weather-easing-ease-in-out">
+				<path d="M47.7,35.4c0-4.6-3.7-8.2-8.2-8.2c-1,0-1.9,0.2-2.8,0.5c-0.3-3.4-3.1-6.2-6.6-6.2c-3.7,0-6.7,3-6.7,6.7c0,0.8,0.2,1.6,0.4,2.3    c-0.3-0.1-0.7-0.1-1-0.1c-3.7,0-6.7,3-6.7,6.7c0,3.6,2.9,6.6,6.5,6.7l17.2,0C44.2,43.3,47.7,39.8,47.7,35.4z" fill="#d4d4d4" transform="translate(-20,-11)"/>
+			</g>
+		</g>
+	</g>
+</svg>
