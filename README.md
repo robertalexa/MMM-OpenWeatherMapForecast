@@ -18,7 +18,7 @@ much of the same functionality.
 ## Installation
 
 1. Navigate into your MagicMirror `modules` folder and execute<br>
-`git clone https://github.com/MarcLandis/MMM-OpenWeatherMapForecast.git`.
+`git clone https://github.com/robertalexa/MMM-OpenWeatherMapForecast.git`.
 2. Enter the new `MMM-OpenWeatherMapForecast` directory and execute `npm install`.
 
 

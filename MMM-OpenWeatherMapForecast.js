@@ -2,7 +2,7 @@
 
   Magic Mirror Module:
   MMM-OpenWeatherMapForecast
-  https://github.com/MarcLandis/MMM-OpenWeatherMapForecast
+  https://github.com/robertalexa/MMM-OpenWeatherMapForecast
 
   Icons in use by this module:
 
