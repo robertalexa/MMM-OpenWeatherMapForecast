@@ -133,6 +133,7 @@
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 100px;
+    width: 33%;
     padding: 10px 5px 10px 5px;
     border-bottom: solid 1px #222;
 }
