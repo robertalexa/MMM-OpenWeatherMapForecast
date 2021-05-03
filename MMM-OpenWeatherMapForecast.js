@@ -125,7 +125,9 @@ Module.register("MMM-OpenWeatherMapForecast", {
             inlineIcons: {
                 rain: this.generateIconSrc("i-rain"),
                 snow: this.generateIconSrc("i-snow"),
-                wind: this.generateIconSrc("i-wind")
+                sunrise: this.generateIconSrc("i-sunrise"),
+                sunset: this.generateIconSrc("i-sunset")
+
             },
             animatedIconSizes: {
                 main: this.config.mainIconSize,
