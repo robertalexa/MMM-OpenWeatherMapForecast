@@ -52,12 +52,11 @@
         {% if config.showPrecipitation %}
 
           <span class="precipitation-container">
-            {% if (config.showInlineIcons) %}
-              {% if forecast.currently.precipitation.accumulationtype == "rain" %}
-                <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
-              {% endif %}
+            {% if (config.showInlineIcons) %}             
               {% if forecast.currently.precipitation.accumulationtype == "snow" %}
                 <img class="inline-icon snow" src="{{ inlineIcons.snow }}" />
+              {% else %}
+                <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
               {% endif %}
             {% endif %}
 
