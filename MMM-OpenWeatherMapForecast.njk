@@ -115,15 +115,15 @@
             <span class="weather-icon-header">&nbsp;</span>
             <span class="temperature-header">&nbsp;</span>
 
-            {% if config.showPrecipitation %}
-              <span class="precipitation-header">
-                <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
-              </span>
-            {% endif %}
-
             {% if config.showWind %}
               <span class="wind-header">
                 <img class="inline-icon wind" src="{{ inlineIcons.wind }}" />
+              </span>
+            {% endif %}
+
+            {% if config.showPrecipitation %}
+              <span class="precipitation-header">
+                <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
               </span>
             {% endif %}
           </div>
