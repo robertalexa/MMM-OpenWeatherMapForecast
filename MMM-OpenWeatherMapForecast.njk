@@ -66,6 +66,22 @@
 
         {% endif %}
 
+        {% if config.showSun %}
+          <br>
+          <span class="sunrise-container">
+            {% if (config.showInlineIcons) %}
+              <img class="inline-icon sunrise-icon" src="{{ inlineIcons.sunrise }}" />
+            {% endif %}
+            <span class="sunrise">{{ forecast.currently.sunrise }}</span>
+          </span>
+          <span class="sunset-container">
+            {% if (config.showInlineIcons) %}
+              <img class="inline-icon sunset-icon" src="{{ inlineIcons.sunset }}" />
+            {% endif %}
+            <span class="sunset">{{ forecast.currently.sunset }}</span>
+          </span>
+        {% endif %}
+
 
       </div>
     {% endif %}

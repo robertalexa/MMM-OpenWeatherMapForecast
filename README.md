@@ -122,6 +122,10 @@ Find out your latitude and longitude here:
       <td>Whether to show wind information. This affects current conditions, hourly and daily forecasts<br><br><strong>Type</strong> <code>Boolean</code><br>Defaults to <code>true</code></td>
     </tr>
     <tr>
+      <td><code>showSun</code></td>
+      <td>Whether to show sunrise and sunset time.<br><br><strong>Type</strong> <code>Boolean</code><br>Defaults to <code>true</code></td>
+    </tr>
+    <tr>
       <td><code>concise</code></td>
       <td>When set to <code>true</code>, this presents less information.  (e.g.: shorter summary, no precipitation accumulation, no wind gusts, etc.)<br><br><strong>Type</strong> <code>Boolean</code><br>Defaults to <code>true</code></td>
     </tr>

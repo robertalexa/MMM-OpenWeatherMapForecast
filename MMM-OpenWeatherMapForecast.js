@@ -68,6 +68,7 @@ Module.register("MMM-OpenWeatherMapForecast", {
         maxDailiesToShow: 3,
         includeTodayInDailyForecast: false,
         showPrecipitation: true,
+        showSun: true,
         concise: true,
         showWind: true,
         showFeelsLike: true,
@@ -331,7 +332,8 @@ Module.register("MMM-OpenWeatherMapForecast", {
                 tempRange: this.formatHiLowTemperature(this.weatherData.daily[0].temp.max, this.weatherData.daily[0].temp.min),
                 precipitation: this.formatPrecipitation(null, this.weatherData.current.rain, this.weatherData.current.snow),
                 wind: this.formatWind(this.weatherData.current.wind_speed, this.weatherData.current.wind_deg, this.weatherData.current.wind_gust),
-
+                sunrise: this.weatherData.current.sunrise.format('hh:MM'),
+                sunset: this.weatherData.current.sunset.format('hh:MM'),
             },
             "summary": summary,
             "hourly": hourlies,

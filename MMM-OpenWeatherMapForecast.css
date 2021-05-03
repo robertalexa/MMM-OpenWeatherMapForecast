@@ -86,7 +86,9 @@
 
 .MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .temperature-container,
 .MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .precipitation-container,
-.MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .wind-container {
+.MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .wind-container,
+.MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .sunrise-container,
+.MMM-OpenWeatherMapForecast .extra-current-conditions-wrapper .sunset-container {
     display: inline-block;
     white-space: nowrap;
     margin: 0 15px;
