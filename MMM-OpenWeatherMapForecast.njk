@@ -51,19 +51,26 @@
 
         {% if config.showPrecipitation %}
 
-          {% if forecast.currently.precipitation.accumulation %}
-            <span class="precipitation-container">
-              {% if (config.showInlineIcons) %}
-                {% if forecast.currently.precipitation.accumulationtype == "rain" %}
-                  <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
-                {% endif %}
-                {% if forecast.currently.precipitation.accumulationtype == "snow" %}
-                  <img class="inline-icon snow" src="{{ inlineIcons.snow }}" />
-                {% endif %}
+          <span class="precipitation-container">
+            {% if (config.showInlineIcons) %}
+              {% if forecast.currently.precipitation.accumulationtype == "rain" %}
+                <img class="inline-icon rain" src="{{ inlineIcons.rain }}" />
               {% endif %}
+              {% if forecast.currently.precipitation.accumulationtype == "snow" %}
+                <img class="inline-icon snow" src="{{ inlineIcons.snow }}" />
+              {% endif %}
+            {% endif %}
+
+            {% if forecast.currently.precipitation.accumulation %}
+              <span class="pop">{{ forecast.currently.precipitation.pop }}</span>
+            {% else %}
+               <span class="pop">0%</span>
+            {% endif %}
+
+            {% if forecast.currently.precipitation.accumulation %}
               <span class="pop">{{ forecast.currently.precipitation.accumulation }}</span>
-            </span>
-          {% endif %}
+            {% endif %}
+          </span>
 
         {% endif %}
 
